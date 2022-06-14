@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/*CSS PRINCIPAL*/
+/*INITIALISATION DE LA PAGE AVEC 0 MARGES (FIXEES APRES)*/
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/*POUR LA POLICE UTILISEE*/
+
+
+html{
+    background-image: url(simple.png);
+    font-family: circular;
+    color: #0D0D0D;
+
+}
+
+/*BANNIERE AVEC LE LOGO*/
+
+header{
+    background-color:#D95B72f9;
+    height: 150px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: fantasy;
+}
+header img{
+    display: block;
+    width: 100px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+header a{
+  text-decoration: none;
+  color: #0D0D0D;
+
+}
+
+/*CONTENANT PAGE INDEX*/
+
+#main{
+    background-color: #F2F2F2f5;
+    font-size: x-large;
+    height: auto;
+    padding-left: 25%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+#main img{
+    width: 750px;
+    transition-property: background-color, border-raduis;
+    transition-duration: 0.5s;
+
+}
+#main img:hover{
+    background-color: #D95B7285 ;
+    border-radius: 1000px;
+}
+#main a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+#main h2{
+    font-size: 25px;
+}
+
+/*CONTENANT PAGE SECONDAIRE*/
+
+#main2{
+    background-color: #F2F2F2f5;
+    font-size: x-large;
+    height: auto;
+    padding-left: 25%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+div{
+    text-align: left;
+}
+#retour {
+  color: #0D0D0D;
+  text-decoration: none;
+}
+#main2 img{
+    width: 750px;
+}
+#main2 .separer{
+    margin: 35px 20px 0px;
+    font-size: 35px;
+}
+#texte p{
+  font-size: 20px;
+  text-align: justify;
+  word-wrap: break-word;
+  text-indent: 65px;
+  margin: 20px 20px 0px;
+
+}
+
+/*BARRE DE NAVIGATION A GAUCHE*/
+
+nav{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #F2F2F200;
+    margin: 20px 0px 0px;
+    height: 500px;
+    width: 20%;
+    float: left;
+    text-align: center;
+
+}
+nav span{
+    text-decoration: underline;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+nav ul{
+    list-style-type: armenian;
+    font-size: 19px;
+}
+nav ul li {
+    padding-bottom: 75px;
+    font-weight: bold;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+}
+nav a:hover{
+    color: #D95B72;
+    border-bottom: 2px solid;
+    border-color: #D95B72;
+}
+
+/*BARRE DE NAVIGATION SUPERIEURE*/
+
+#barre_menu{
+    width: 100%;
+    margin: 0px 0px 0px 0px;         /*parametre initiaux de la barre_menu*/
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+#barre_menu ul{
+    list-style-type: none;    /*enlever les point d'une liste*/
+    padding-left: 0px;
+}
+#barre_menu ul .deroulant{
+    float: left;
+    width: 25%;               /*texte en ligne*/
+    text-align: center;
+    position: relative;
+    background-color: RGBa(255,255,255,0.5);
+}
+#barre_menu ul::after{
+    content: "";
+    display: inline;           /*centrer comme une ligne*/
+    clear: both;
+}
+#barre_menu a{
+    display: block;
+    text-decoration: none;    /*enlever le bleu et underline du lien*/
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;        /*centré dans barre_menu */
+}
+
+/* LE MENU DEROULANT : */
+
+#barre_menu a:hover{
+    color: #F2F2F2;
+    border-bottom: 2px solid;
+    border-color: #F2F2F2;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.contenu{
+    display: none;
+    background-color: #D95B72f0 ;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    font-weight: bold;
+
+}
+#barre_menu > ul li:hover .contenu{
+    display: block;
+}
+.contenu li{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.contenu a{
+    padding: 10px;
+    border-bottom: none;
+}
+.contenu a:hover{
+    border-bottom: none;
+    background-color: RGBa(0,0,0,0);
+}
+.deroulant > a::after{
+    content:"    ⮯";
+    font-size: 20px;
+}
+
+/*FIN*/
+
+footer{
+    background-color: #D95B72f9;
+}
+table{
+  font-size: 20px;
+  font-family: 'Josefin sans',sans-serif;
+  width: 100%;
+  text-align: center;
+
+}
+caption{
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
